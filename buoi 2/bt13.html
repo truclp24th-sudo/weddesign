@@ -1,0 +1,84 @@
+﻿<html>
+<head>
+    <style>
+        div {
+            width: 500px;
+            margin: auto;
+        }
+
+        input[type=number] {
+            width: 50PX;
+        }
+
+        input[type=umber]:nth-child(1) {
+            width: auto;
+        }
+
+        td:nth-child(2n+1) {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Đăng ký du lịch</h1>
+        <table>
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="number" /></td>
+            </tr>
+
+            <tr>
+                <td>Khách Việt Nam</td>
+                <td><input type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td>Chọn tour</td>
+                <td>
+                    <select>
+                        <optgroup label="Miền Bắc">
+                            <option>Hà Nội - Hạ Long - Sapa</option>
+                        </optgroup>
+
+                        <optgroup label="Miền Trung">
+                            <option>Huế - Bạch Mã - Đà Nẵng</option>
+                            <option>Nha Trang - Đà Lạt</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phương Tiện</td>
+                <td><input type="radio" name="piten" />Máy bay<input type="radio" name="piten" checked />Xe ô tô</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Số lượng đoàn khách</legend>
+                        Người lớn <input type="number" value="6" /> Trẻ em <input type="number" />
+                    </fieldset>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Ghi chú thêm</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center"><input type="button" value="Đồng ý" /></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
